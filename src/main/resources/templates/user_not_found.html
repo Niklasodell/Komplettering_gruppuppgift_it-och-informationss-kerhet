@@ -1,0 +1,17 @@
+<!--
+Denna HTML-sida visar ett felmeddelande om att en användare inte kunde hittas.
+Den använder Thymeleaf för att infoga den specifika e-postadressen i meddelandet för att ge mer kontext till felet.
+En länk finns också tillgänglig för att navigera tillbaka till adminsidan.
+-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Not Found</title>
+</head>
+<body>
+<h1>User Not Found</h1>
+<p>The user with email <span th:text="${id}"></span> could not be found.</p>
+<a href="/admin" class="button">Go Back to Admin Page</a>
+</body>
+</html>
